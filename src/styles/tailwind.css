@@ -1,0 +1,38 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply w-10 mx-1 text-sm text-white lg:w-24 lg:mx-2;
+  }
+  .btn:hover {
+    @apply text-red-500 transition-all;
+  }
+  .btn:focus {
+    @apply border-none;
+  }
+  .btn1 {
+    @apply w-32 h-10 mt-10 text-sm bg-transparent border-2 border-white;
+  }
+  .input:focus {
+    @apply border border-white;
+  }
+  .skill {
+    @apply flex items-center justify-center p-2 bg-gray-600 rounded-3xl;
+  }
+  .animation {
+    @apply motion-safe:animate-spin;
+  }
+  .fbtn {
+    @apply mx-2 lg:mx-5 lg:w-32 lg:h-10;
+  }
+  .fbtn:hover {
+    @apply text-red-500 border-b-2 border-white animate-bounce;
+  }
+  .fbtn > svg:hover {
+    @apply text-red-500;
+  }
+}
